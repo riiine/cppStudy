@@ -191,6 +191,9 @@ int main()
 
     확인
     */
+    cout << "arrPtr4 사이즈 알아보기" << sizeof(arrPtr4) << endl;
+    cout << "intArr4 사이즈 알아보기" << sizeof(intArr4) << endl;
+
     cout << "intArr4[0] 주소값 : " << *arrPtr4 << endl;
     cout << "intArr4[1] 주소값 : " << *arrPtr4 + 1 << endl;
     cout << "intArr4[2] 주소값 : " << *arrPtr4 + 2 << endl;
