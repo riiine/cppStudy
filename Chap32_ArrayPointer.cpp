@@ -192,17 +192,25 @@ int main()
     확인
     */
     cout << "intArr4[0] 주소값 : " << *arrPtr4 << endl;
-    cout << "intArr4[1] 주소값 : " << *(arrPtr4 + 1) << endl;
-    cout << "intArr4[2] 주소값 : " << *(arrPtr4 + 2) << endl;
-    cout << "intArr4[3] 주소값 : " << *(arrPtr4 + 3) << endl;
-    cout << "intArr4[4] 주소값 : " << *(arrPtr4 + 4) << endl;
+    cout << "intArr4[1] 주소값 : " << *arrPtr4 + 1 << endl;
+    cout << "intArr4[2] 주소값 : " << *arrPtr4 + 2 << endl;
+    cout << "intArr4[3] 주소값 : " << *arrPtr4 + 3 << endl;
+    cout << "intArr4[4] 주소값 : " << *arrPtr4 + 4 << endl;
+
+    cout << "" << endl;
+    cout << "" << endl;
+    /** 확인해야 합니다. */
+    for (int i = 0; i < size(intArr4); i++)
+    {
+        cout << "intArr4[" << i << "] 주소값 : " << arrPtr4[i] << endl;
+    }
 
     cout << "" << endl;
     cout << "" << endl;
 
     for (int i = 0; i < size(intArr4); i++)
     {
-        cout << "intArr4[" << i << "] 주소값 : " << arrPtr4[i] << endl;
+        cout << "intArr4[" << i << "] 주소값 : " << *arrPtr4 + i << endl;
     }
 
     cout << "" << endl;
