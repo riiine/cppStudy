@@ -36,7 +36,6 @@ int main()
     주소값은 16진수입니다.
     포인터 변수에 1을 더한 값이 출력된 것을 볼 수 있습니다.
     이는 무엇을 의미하는 것일까요?
-
     intPtr1 + 1의 주소값 : intPtr1의 주소값에 4바이트가 더해진 값입니다.
     */
     cout << "intPtr1의 주소값 : " << intPtr1 << endl;
@@ -74,10 +73,17 @@ int main()
     */
 
     /** 확인*/
-    //for (int i : intArr1)
-    //{
-    //    cout << "intArr1 address : " << &intArr1[i] << endl;
-    //}
+    int index = 0;
+
+    for (int i : intArr1)
+    {
+        cout << "intArr1[" << index << "] address : " << &intArr1[index] << endl;
+
+        index++;
+    }
+
+    cout << "" << endl;
+    cout << "" << endl;
 
     for (int i = 0; i < size(intArr1); i++)
     {
@@ -109,15 +115,15 @@ int main()
     /** 확인*/
     int intArr2[9] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
-    //for (int i = 0; i < 9; i++)
-    //{
-    //    cout << "address0 : " << &intArr2[i] << endl;
-    //    cout << "address1 : " << intArr2 + 1 << endl;
-    //    cout << "" << endl;
-    //}
+    for (int i = 0; i < size(intArr2); i++)
+    {
+        cout << "address0 : " << &intArr2[i] << endl;
+        cout << "address1 : " << intArr2 + (i + 1) << endl;
+        cout << "" << endl;
+    }
 
-    //cout << "" << endl;
-    //cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
 
     /** 다음 문장을 보도록 합니다. */
     for (int i = 0; i < size(intArr2); i++)
