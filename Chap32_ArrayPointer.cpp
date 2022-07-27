@@ -185,14 +185,15 @@ int main()
 
     arrPtr4 = &intArr4;
 
+
+
     /**
     배열의 주소를 가진 포인터는 +1 / -1 연산으로 어느 요소든 쉽게 접근이 가능합니다.
     포인터에 1을 더하면 주소는 int타입의 무게인 4byte 만큼 더해 집니다.
 
     확인
     */
-    cout << "arrPtr4 사이즈 알아보기" << sizeof(arrPtr4) << endl;
-    cout << "intArr4 사이즈 알아보기" << sizeof(intArr4) << endl;
+
 
     cout << "intArr4[0] 주소값 : " << *arrPtr4 << endl;
     cout << "intArr4[1] 주소값 : " << *arrPtr4 + 1 << endl;
@@ -203,9 +204,14 @@ int main()
     cout << "" << endl;
     cout << "" << endl;
     /** 확인해야 합니다. */
+
+    cout << "size of intArr4 : " << sizeof(intArr4) << endl;
+
+    cout << "" << endl;
+
     for (int i = 0; i < size(intArr4); i++)
     {
-        cout << "intArr4[" << i << "] 주소값 : " << arrPtr4[i] << endl;
+        cout << "배열포인터의 실제값의 주소값 : " << arrPtr4[i] << endl;
     }
 
     cout << "" << endl;
