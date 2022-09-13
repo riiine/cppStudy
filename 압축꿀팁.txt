@@ -7,3 +7,17 @@ Config, Content, Source, ProjectAvatar(언리얼프로젝트파일)
 아니면 메뉴에서
 
 프로젝트 압축 -> 이렇게 하면 알아서 위 4개의 폴더만 압축해줌.
+
+
+
+실행이 안 되는 경우
+
+C:\Program Files (x86)\Epic Games\Launcher\Engine\Binaries\Win64
+
+UnrealVersionSelector.exe
+
+이거를
+
+C:\Program Files\Epic Games\UE_4.25\Engine\Binaries\Win64
+
+여기에다가 덮어쓰기
